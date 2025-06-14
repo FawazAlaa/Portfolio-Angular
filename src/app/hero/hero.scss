@@ -1,0 +1,66 @@
+.hero {
+
+    background-color: black;
+
+    .hero_intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+        .heroimg {
+            position: relative;
+            width: 450px;
+            height: 450px;
+
+            img {
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                animation: beat 4s infinite ease-in-out;
+            }
+
+            @keyframes beat {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.09);
+                }
+            }
+        }
+
+        .hero_text {
+            width: 75%;
+
+            h1 {
+                margin-bottom: 18px;
+            }
+
+            h2 {
+                margin-bottom: 36px;
+            }
+
+            button {
+                padding: 10px 20px;
+                border: 2px solid white;
+                background-color: transparent;
+                color: white;
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: white;
+                color: black;
+
+            }
+        }
+    }
+}
